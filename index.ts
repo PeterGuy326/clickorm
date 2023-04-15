@@ -1,9 +1,4 @@
-import net from 'net';
+import { Clickorm } from './core/clickorm';
 
-const client = net.createConnection({
-    host: '127.0.0.1',
-    port: 8123
-}, () => {
-    console.log('Connected to ClickHouse server');
-});
-
+const clickorm = new Clickorm('127.0.0.1', 8123, 'root', '123456');
+const client = clickorm.getClient();

@@ -18,5 +18,8 @@
   "homepage": "https://github.com/FallingKids/clickorm#readme",
   "devDependencies": {
     "@types/node": "^18.15.11"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
   }
 }
